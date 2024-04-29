@@ -48,16 +48,15 @@
 
 <main id="main_body">
   <div id="form_container">
-    <h1>StribLab Election Mapper 2024</h1>
     <form id="form_id" class="appnitro" on:submit={handleSubmit}>
       <div class="form_description">
         <h2>StribLab Election Mapper 2024</h2>
-        <p>Embeddable Mapbox visualizations.</p>
+        <p></p>
       </div>
 
       <!-- Dropdown for selecting contest -->
+      <p for="eOffice">Select Office</p>
       <div class="element">
-        <label for="eOffice">Select Office:</label>
         <select bind:value={district} class="element select medium" id="eOffice">
           <option value="" selected></option>
           {#each elections as election}
@@ -65,97 +64,94 @@
           {/each}
         </select>
       </div>
-
+      
       <!-- Radio buttons for district borders -->
+      <p>Boundaries</p>
       <div class="element">
-        <label>Boundaries:</label>
-        <label>
-          <input type="radio" bind:group={boundaries} value="1" checked> Enable
-        </label>
-        <label>
-          <input type="radio" bind:group={boundaries} value="0"> Disable
-        </label>
+        <div class="options">
+          <input type="radio" id="boundariesYes" bind:group={boundaries} value="1" checked>
+          <label for="boundariesYes">Enable</label>
+          <input type="radio" id="boundariesNo" bind:group={boundaries} value="0">
+          <label for="boundariesNo">Disable</label>
+        </div>
       </div>
 
       <!-- Radio buttons for zoom mode -->
+      <p>Isolation Mode</p>
       <div class="element">
-        <label>Isolation Mode:</label>
-        <label>
-          <input type="radio" bind:group={isolate} value="0" checked> State
-        </label>
-        <label>
-          <input type="radio" bind:group={isolate} value="1"> Metro
-        </label>
+        <div class="options">
+          <input type="radio" id="isolateState" bind:group={isolate} value="0" checked>
+          <label for="isolateState">State</label>
+          <input type="radio" id="isolateMetro" bind:group={isolate} value="1">
+          <label for="isolateMetro">Metro</label>
+        </div>
       </div>
 
-      <!-- Radio buttons for interactive controls -->
+      <p>Interactive Mode</p>
       <div class="element">
-        <label>Interactive Mode:</label>
-        <label>
-          <input type="radio" bind:group={interactive} value="1" checked> Enable
-        </label>
-        <label>
-          <input type="radio" bind:group={interactive} value="0"> Disable
-        </label>
+        <div class="options">
+          <input type="radio" id="interactiveYes" bind:group={interactive} value="1" checked>
+          <label for="interactiveYes">Enable</label>
+          <input type="radio" id="interactiveNo" bind:group={interactive} value="0">
+          <label for="interactiveNo">Disable</label>
+        </div>
       </div>
-
-      <!-- Radio buttons for map click interactivity -->
+      
+      <p>Click Interactivity</p>
       <div class="element">
-        <label>Click Interactivity:</label>
-        <label>
-          <input type="radio" bind:group={clicky} value="1" checked> Enable
-        </label>
-        <label>
-          <input type="radio" bind:group={clicky} value="0"> Disable
-        </label>
+        <div class="options">
+          <input type="radio" id="clickyYes" bind:group={clicky} value="1" checked>
+          <label for="clickyYes">Enable</label>
+          <input type="radio" id="clickyNo" bind:group={clicky} value="0">
+          <label for="clickyNo">Disable</label>
+        </div>
       </div>
-
-      <!-- Radio buttons for map search -->
+      
+      <p>Search Feature</p>
       <div class="element">
-        <label>Search Feature:</label>
-        <label>
-          <input type="radio" bind:group={search} value="1" checked> Enable
-        </label>
-        <label>
-          <input type="radio" bind:group={search} value="0"> Disable
-        </label>
+        <div class="options">
+          <input type="radio" id="searchYes" bind:group={search} value="1" checked>
+          <label for="searchYes">Enable</label>
+          <input type="radio" id="searchNo" bind:group={search} value="0">
+          <label for="searchNo">Disable</label>
+        </div>
       </div>
-
-      <!-- Radio buttons for result shading mode -->
+      
+      <p>Shading Mode</p>
       <div class="element">
-        <label>Shading Mode:</label>
-        <label>
-          <input type="radio" bind:group={shading} value="0" checked> Partisan margin + vote density
-        </label>
-        <label>
-          <input type="radio" bind:group={shading} value="1"> Classic partisan margin ramp
-        </label>
+        <div class="options">
+          <input type="radio" id="shadingYes" bind:group={shading} value="1" checked>
+          <label for="shadingYes">
+            Partisan margin + vote density
+            </label>
+          <input type="radio" id="shadingNo" bind:group={shading} value="0">
+          <label for="shadingNo">Classic partisan margin ramp</label>
+        </div>
       </div>
 
       <!-- Radio buttons for header text display -->
+      <p>Header Text</p>
       <div class="element">
-        <label>Header Text:</label>
-        <label>
-          <input type="radio" bind:group={showText} value="1"> Enable
-        </label>
-        <label>
-          <input type="radio" bind:group={showText} value="0" checked> Disable
-        </label>
+          <input type="radio" id="headerYes" bind:group={showText} value="1"> 
+          <label for="headerYes">Enable</label>
+          <input type="radio" id="headerNo" bind:group={showText} value="0" checked>
+          <label for="headerNo">Disable</label>
       </div>
 
       <!-- Text inputs for data visualization headings and chatter -->
+      <p>Map Title</p>
       <div class="element">
-        <label for="eHed">Map Title:</label>
         <input type="text" bind:value={hed} class="element text medium" maxlength="255" id="eHed">
       </div>
+
+      <p>Description</p>
       <div class="element">
-        <label for="eChatter">Description:</label>
         <textarea bind:value={chatter} class="element textarea medium" id="eChatter"></textarea>
       </div>
 
       <!-- Text input for map height -->
+      <p>Map Height</p>
       <div class="element">
-        <label for="eHeight">Map Height:</label>
         <input type="text" bind:value={height} class="element text medium" maxlength="255" id="eHeight">
       </div>
 
@@ -190,20 +186,24 @@
 
   .element label {
     margin-right: 10px; /* Space between label and input */
-    min-width: 120px; /* Ensures labels have enough space */
   }
 
-  .element input[type="radio"] {
-    margin-right: 5px;
+  .options {
+    display: flex;
+    align-items: center; /* Ensures radio buttons and labels are aligned */
   }
 
-  .element.text, .element.textarea, .element.select {
-    flex-grow: 1; /* Allows text inputs, textareas, and select to take available space */
+  .options label {
+    margin-right: 20px; /* Space after each label */
+  }
+
+  input[type="radio"] {
+    margin-right: 5px; /* Space before the label */
   }
 
   .button_text {
     padding: 10px 20px;
-    background-color: #007BFF; /* Blue background */
+    background-color: #1e7042; /* Blue background */
     color: white;
     border: none;
     border-radius: 5px;
@@ -211,9 +211,6 @@
   }
 
   .button_text:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  #tagged {
-    white-space:normal;
+    background-color: #1e7042; /* Darker blue on hover */
   }
 </style>
