@@ -12,7 +12,7 @@ Instructions for reporters, graphic designers and anyone else:
 
 3. Click GENERATE and an embeddable Mapbox URL will pop into a new browser tab
 
-4. Download necessary GEOJSON shapefiles, result CSVs and SVGs for desired contests and geographies from the list below the configuration option.
+4. Download necessary GEOJSON shapefiles and result CSVs for desired contests and geographies from the list below the configuration options.
 
 
 ## Starting a project
