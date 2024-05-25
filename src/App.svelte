@@ -50,11 +50,10 @@
 
 <main id="main_body">
   <div id="form_container">
-    <h1>StribLab Election 2022 Precinct Mapper</h1>
     <form id="form_id" class="appnitro" on:submit={handleSubmit}>
       <div class="form_description">
-        <h2>StribLab Election 2022 Precinct Mapper</h2>
-        <p>Configure and generate precinct result maps.</p>
+        <h2>StribLab Election 2024 Mapifier</h2>
+        <p>Configure and generate precinct-based election result maps.</p>
       </div>
 
       <div class="element">
