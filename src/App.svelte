@@ -200,6 +200,11 @@
                 <div class="control_indicator"></div>
                 Partisan binary [Red vs. Blue]
             </label>
+            <label class="control control-radio">
+                <input id="eShading_3" name="eShading" class="element radio" type="radio" value="3" bind:group={shading} />
+                <div class="control_indicator"></div>
+                Party primary [Orange vs. Green]
+            </label>
         </span> 
     </li>
     <li>
@@ -247,30 +252,40 @@
 <h2>Results file downloads</h2>
 <p class="dlabel">Presidential</p>
 <ul>
-    <li><a href="../store/potus-results-geo.json">GEOJSON: POTUS results by precinct</a></li>
-    <li><a href="../store/potus-results-county.json">GEOJSON: POTUS results by county</a></li>
-    <li><a href="../store/potus-results-district.json">GEOJSON: POTUS results by congressional district</a></li>
-    <li><a href="../store/potus-results-leg.json">GEOJSON: POTUS results by legislative district</a></li>
+    <li>POTUS results by precinct</li>
+    <div><a href="../store/potus-results-geo.json">GEOJSON</a> | <a href="../store/potus-results-geo.csv">CSV</a></div>
+    <li>POTUS results by county</li>
+    <div><a href="../store/potus-results-county.json">GEOJSON</a> | <a href="../store/potus-results-county.csv">CSV</a></div>
+    <li>POTUS results by congressional district</li>
+    <div><a href="../store/potus-results-district.json">GEOJSON</a> | <a href="../store/potus-results-district.csv">CSV</a></div>
+    <li>POTUS results by legislative district</li>
+    <div><a href="../store/potus-results-leg.json">GEOJSON</a> | <a href="../store/potus-results-leg.csv">CSV</a></div>
 </ul>
 
 <p class="dlabel">Senatorial</p>
 <ul>
-    <li><a href="../store/senate-results-geo.json">GEOJSON: Senate results by precinct</a></li>
-    <li><a href="../store/senate-results-district.json">GEOJSON: Senate results by congressional district</a></li>
+    <li>Senate results by precinct</li>
+    <div><a href="../store/senate-results-geo.json">GEOJSON</a> | <a href="../store/senate-results-geo.csv">CSV</a></div>
+    <li>Senate results by congressional district</li>
+    <div><a href="../store/senate-results-district.json">GEOJSON</a> | <a href="../store/senate-results-district.csv">CSV</a></div>
 </ul>
 
 
 <p class="dlabel">Congressional</p>
 <ul>
-    <li><a href="../store/congress-results-geo.json">GEOJSON: U.S. House results by precinct</a></li>
-    <li><a href="../store/congress-results-district.json">GEOJSON: U.S. House results by congressional district</a></li>
+    <li>U.S. House results by precinct</li>
+    <div><a href="../store/congress-results-geo.json">GEOJSON</a> | <a href="../store/congress-results-geo.csv">CSV</a></div>
+    <li>U.S. House results by congressional district</li>
+    <div><a href="../store/congress-results-district.json">GEOJSON</a> | <a href="../store/congress-results-district.csv">CSV</a></div>
 </ul>
 
 
 <p class="dlabel">Legislative</p>
 <ul>
-    <li><a href="../store/mnleg-results-geo.json">GEOJSON: MNLEG results by precinct</a></li>
-    <li><a href="../store/mnleg-results-leg.json">GEOJSON: MNLEG by legislative district</a></li>
+    <li>MNLEG results by precinct</li>
+    <div><a href="../store/mnleg-results-geo.json">GEOJSON</a> | <a href="../store/mnleg-results-geo.csv">CSV</a></div>
+    <li>MNLEG by legislative district</li>
+    <div><a href="../store/mnleg-results-leg.json">GEOJSON</a> | <a href="../store/mnleg-results-leg.csv">CSV</a></div>
 </ul>
 </div>
 </main>
@@ -367,7 +382,7 @@
         position: absolute;
         top: 2px;
         left: 0;
-        height: 10px;
+        height: 2px;
         width: 10px;
         background: #e6e6e6;
         border: 0px solid #000000;
@@ -414,21 +429,6 @@
     }
     .control-radio input:disabled ~ .control_indicator:after {
         background: #7b7b7b;
-    }.control-radio .control_indicator::before {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 4.5rem;
-        height: 4.5rem;
-        margin-left: -1.3rem;
-        margin-top: -1.3rem;
-        background: #2aa1c0;
-        border-radius: 3rem;
-        opacity: 0.6;
-        z-index: 99999;
-        transform: scale(0);
     }
     @keyframes s-ripple {
         0% {
