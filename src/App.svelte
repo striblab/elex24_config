@@ -24,7 +24,7 @@
     event.preventDefault();
 
     // Construct the URL with parameters
-    const baseUrl = 'https://static.startribune.com/staging/news/projects/all/elex24maps/index.html';
+    const baseUrl = 'https://static.startribune.com/news/projects/all/elex24maps/index.html';
     const params = new URLSearchParams({
       office: district,
       overlay: boundaries,
