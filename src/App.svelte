@@ -266,6 +266,8 @@
 <ul>
     <li>Senate results by precinct</li>
     <div><a href="../store/senate-results-geo.json">GEOJSON</a> | <a href="../store/senate-results-geo.csv">CSV</a></div>
+    <li>Senate results by county</li>
+    <div><a href="../store/senate-results-county.json">GEOJSON</a> | <a href="../store/senate-results-county.csv">CSV</a></div>
     <li>Senate results by congressional district</li>
     <div><a href="../store/senate-results-district.json">GEOJSON</a> | <a href="../store/senate-results-district.csv">CSV</a></div>
 </ul>
