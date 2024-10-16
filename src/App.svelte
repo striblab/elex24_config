@@ -203,7 +203,7 @@
             <label class="control control-radio">
                 <input id="eShading_3" name="eShading" class="element radio" type="radio" value="3" bind:group={shading} />
                 <div class="control_indicator"></div>
-                Party primary [Orange vs. Green]
+                Ballot question binary [Orange vs. Green]
             </label>
         </span> 
     </li>
@@ -288,6 +288,17 @@
     <div><a href="../store/mnleg-results-geo.json">GEOJSON</a> | <a href="../store/mnleg-results-geo.csv">CSV</a></div>
     <li>MNLEG by legislative district</li>
     <div><a href="../store/mnleg-results-leg.json">GEOJSON</a> | <a href="../store/mnleg-results-leg.csv">CSV</a></div>
+    <li>State Senate special election by precinct</li>
+    <div><a href="../store/mnsen-results-geo.json">GEOJSON</a> | <a href="../store/mnsen-results-geo.csv">CSV</a></div>
+</ul>
+</div>
+
+<p class="dlabel">Constitutional Amendment</p>
+<ul>
+    <li>Ballot measure results by precinct</li>
+    <div><a href="../store/ballot-results-geo.json">GEOJSON</a> | <a href="../store/ballot-results-geo.csv">CSV</a></div>
+    <li>Ballot measure results by county</li>
+    <div><a href="../store/ballot-results-county.json">GEOJSON</a> | <a href="../store/ballot-results-county.csv">CSV</a></div>
 </ul>
 </div>
 </main>
