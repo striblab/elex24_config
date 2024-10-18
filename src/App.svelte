@@ -316,7 +316,7 @@
     font-weight:bold
 }
 #downloads li {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'graphik-medium', Helvetica, sans-serif;
 }
 
   #form_container {
