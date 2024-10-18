@@ -57,7 +57,7 @@
       </div>
 
       <div class="element">
-        <label for="eOffice">Select Office:</label>
+        <label for="eOffice">Select contest:</label>
         <select bind:value={district} class="element select medium" id="eOffice">
           <option value="" selected></option>
           {#each elections as election}
@@ -65,6 +65,8 @@
           {/each}
         </select>
       </div>
+
+      <p>&nbsp;</p>
 
       <ul>
       <li>
@@ -260,6 +262,9 @@
     <div><a href="../store/potus-results-district.json">GEOJSON</a> | <a href="../store/potus-results-district.csv">CSV</a></div>
     <li>POTUS results by legislative district</li>
     <div><a href="../store/potus-results-leg.json">GEOJSON</a> | <a href="../store/potus-results-leg.csv">CSV</a></div>
+    <li>POTUS results by Minnesota city and township [Harris and Trump]</li>
+    <div><a href="../store/cities_potus.csv">CSV</a></div>
+
 </ul>
 
 <p class="dlabel">Senatorial</p>
@@ -291,15 +296,14 @@
     <li>State Senate special election by precinct</li>
     <div><a href="../store/mnsen-results-geo.json">GEOJSON</a> | <a href="../store/mnsen-results-geo.csv">CSV</a></div>
 </ul>
-</div>
 
-<p class="dlabel">Constitutional Amendment</p>
+<!-- <p class="dlabel">Constitutional Amendment</p>
 <ul>
     <li>Ballot measure results by precinct</li>
     <div><a href="../store/ballot-results-geo.json">GEOJSON</a> | <a href="../store/ballot-results-geo.csv">CSV</a></div>
     <li>Ballot measure results by county</li>
     <div><a href="../store/ballot-results-county.json">GEOJSON</a> | <a href="../store/ballot-results-county.csv">CSV</a></div>
-</ul>
+</ul> -->
 </div>
 </main>
 
@@ -329,7 +333,6 @@
   }
 
   .element {
-    margin-bottom: 20px;
     display: flex;
     align-items: center; /* Aligns items vertically */
     flex-wrap: wrap;
