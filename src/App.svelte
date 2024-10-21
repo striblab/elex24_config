@@ -53,7 +53,7 @@
     <form id="form_id" class="appnitro" on:submit={handleSubmit}>
       <div class="form_description">
         <h2>StribLab Election 2024 Mapifier</h2>
-        <p>Configure and generate precinct-based election result maps.</p>
+        <p class="disclaimer">Disclaimer: for internal use only, don't publicly share the generated links, embed on article pages instead.</p>
       </div>
 
       <div class="element">
