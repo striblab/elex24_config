@@ -15,7 +15,7 @@
   let elections = []; // This will hold the fetched data
 
   onMount(async () => {
-    const response = await fetch('./src/data/directory.json');
+    const response = await fetch('./public/src/data/directory.json');
     elections = await response.json();
   });
 
