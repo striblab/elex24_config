@@ -53,6 +53,7 @@
     <form id="form_id" class="appnitro" on:submit={handleSubmit}>
       <div class="form_description">
         <h2>StribLab Election 2024 Mapifier</h2>
+        <p>Use this page to configure parameters that generate Mapbox precinct-level election results. Select a race from the dropdown, choose your map features and click GENERATE to pop a URL into a new tab for embedding in stories. Bug Jeff Hargarten with questions.</p>
         <p class="disclaimer">Disclaimer: for internal use only, don't publicly share the generated links, embed on article pages instead.</p>
       </div>
 
@@ -70,7 +71,7 @@
 
       <ul>
       <li>
-        <label class="description" for="eDistricts">District borders</label>
+        <label class="description" for="eDistricts">District borders – does it have county or district borderlines?</label>
         <span>
             <label class="control control-radio">
                 <input id="eDistricts_1" name="eDistricts" class="element radio" type="radio" value="1" checked bind:group={boundaries}  />
@@ -85,7 +86,7 @@
         </span> 
     </li>
     <li>
-        <label class="description" for="eIsolate">Zoom mode</label>
+        <label class="description" for="eIsolate">Zoom focus – where are we zoomed to?</label>
         <span>
             <label class="control control-radio">
                 <input id="eIsolate_1" name="eIsolate" class="element radio" type="radio" value="0" checked bind:group={isolate} />
@@ -140,7 +141,7 @@
         </span> 
     </li>
     <li>
-        <label class="description" for="eInteract">State/metro controls</label>
+        <label class="description" for="eInteract">State/metro controls – does it have those zoom shortcuts?</label>
         <span>
             <label class="control control-radio">
                 <input id="eInteract_1" name="eInteract" class="element radio" type="radio" value="1" checked bind:group={interactive} />
@@ -155,7 +156,7 @@
         </span> 
     </li>
     <li>
-        <label class="description" for="eClicky">Map interactivity</label>
+        <label class="description" for="eClicky">Map interactivity – zoom, pan, drag, click and tooltips</label>
         <span>
             <label class="control control-radio">
                 <input id="eClicky_1" name="eClicky" class="element radio" type="radio" value="1" checked bind:group={clicky} />
@@ -170,7 +171,7 @@
         </span> 
     </li>
     <li>
-        <label class="description" for="eSearch">Map search</label>
+        <label class="description" for="eSearch">Map search - does it have the fancy location search box?</label>
         <span>
             <label class="control control-radio">
                 <input id="eSearch_1" name="eSearch" class="element radio" type="radio" value="1" checked bind:group={search} />
@@ -185,7 +186,7 @@
         </span> 
     </li>
     <li>
-        <label class="description" for="eShading">Result shading mode</label>
+        <label class="description" for="eShading">Result shading mode – the second option will be used for most maps</label>
         <span>
             <label class="control control-radio">
                 <input id="eShading_1" name="eShading" class="element radio" type="radio" value="0" checked bind:group={shading} />
@@ -210,7 +211,7 @@
         </span> 
     </li>
     <li>
-        <label class="description" for="eHeader">Show header text</label>
+        <label class="description" for="eHeader">Show header text - do we have graphic hed and chatter?</label>
         <span>
             <label class="control control-radio">
                 <input id="eText_1" name="eText" class="element radio" type="radio" value="1" bind:group={showtext} />
@@ -252,6 +253,7 @@
 <hr />
 <div id="downloads">
 <h2>Results file downloads</h2>
+<p>Some underlying election results data files in various formats that power the Mapbox maps. If you see a problem, or don't see the data you want, bug Jeff Hargarten.</p>
 <p class="dlabel">Presidential</p>
 <ul>
     <li>POTUS results by precinct</li>
@@ -315,6 +317,10 @@
     margin-top:18px;
     font-weight:bold
 }
+.appnitro li {
+    width: 100% !important;
+}
+
 #downloads li {
     font-family: 'graphik-medium', Helvetica, sans-serif;
 }
