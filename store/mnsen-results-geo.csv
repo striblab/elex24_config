@@ -1090,7 +1090,7 @@
 "Emily City",0,0,0,0,0
 "Emmet Twp",0,0,0,0,0
 "Emmons",0,0,0,0,0
-"Empire Twp",0,0,0,0,0
+"Empire",0,0,0,0,0
 "Enstrom Twp",0,0,0,0,0
 "Enterprise Twp",0,0,0,0,0
 "Equality Twp",0,0,0,0,0
@@ -1494,7 +1494,8 @@
 "Heidelberg",0,0,0,0,0
 "Heier Twp",0,0,0,0,0
 "Height of Land Twp",0,0,0,0,0
-"Helen Twp",0,0,0,0,0
+"Helen Twp P-1",0,0,0,0,0
+"Helen Twp P-2",0,0,0,0,0
 "Helena Twp",0,0,0,0,0
 "Helga Twp",0,0,0,0,0
 "Helgeland Twp",0,0,0,0,0
@@ -1604,7 +1605,8 @@
 "Hutchinson P-3",0,0,0,0,0
 "Hutchinson Twp",0,0,0,0,0
 "Hyde Park Twp",0,0,0,0,0
-"Ida Twp",0,0,0,0,0
+"Ida Twp P-1",0,0,0,0,0
+"Ida Twp P-2",0,0,0,0,0
 "Ideal Twp",0,0,0,0,0
 "Idun Twp",0,0,0,0,0
 "Ihlen",0,0,0,0,0
@@ -1669,6 +1671,7 @@
 "Jones Twp",0,0,0,0,0
 "Jordan P-1",0,0,0,0,0
 "Jordan P-2",0,0,0,0,0
+"Jordan P-3",0,0,0,0,0
 "Jordan Twp",0,0,0,0,0
 "Judson Twp P-1",0,0,0,0,0
 "Judson Twp P-2",0,0,0,0,0
@@ -1889,7 +1892,7 @@
 "Lida Twp",0,0,0,0,0
 "Lien Twp",0,0,0,0,0
 "Lilydale",0,0,0,0,0
-"Lima Twp",0,0,0,0,0
+"Lima Unorg",0,0,0,0,0
 "Lime Lake Twp",0,0,0,0,0
 "Lime Twp",0,0,0,0,0
 "Limestone Twp",0,0,0,0,0
@@ -3279,10 +3282,10 @@
 "Shoreview P-5",0,0,0,0,0
 "Shoreview P-6",0,0,0,0,0
 "Shoreview P-7",0,0,0,0,0
-"Shorewood",0,0,0,0,0
 "Shorewood P-1",1717,866,848,50.44,49.39
 "Shorewood P-2",2443,1226,1216,50.18,49.77
 "Shorewood P-3",1132,576,555,50.88,49.03
+"Shorewood P-4",0,0,0,0,0
 "Shotley Twp",0,0,0,0,0
 "Sibley Twp",0,0,0,0,0
 "Sigel Twp",0,0,0,0,0
